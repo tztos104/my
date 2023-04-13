@@ -1,0 +1,31 @@
+*{margin: 0 auto;}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo_a{ color: #fff;
+    text-decoration: none;
+}
+header{
+    height: 80px;
+    background-color: #006699;
+}
+header #logo{
+    width: 200px; float: left;
+    line-height: 80px;
+}
+header nav{
+        width: 750px; float: right;
+        line-height: 80px;
+}
+header h1{color:#fff; padding-left: 20px;}
+nav ul{
+    list-style: none;
+}
+nav ul li{float: left;}
+a{display: block;
+padding: 0 20px;
+color: #fff;
+text-decoration: none;}
+a:hover{background-color: #003d5c;}
+section h2{margin:20px}

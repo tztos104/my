@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서</title>
+    <link rel="stylesheet" href="./css/order.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>레드향 주문하기</h1>
+    <form method="post" action="order.jsp">
+        <fieldset>
+            <legend>상품선택</legend>
+            <p>주문할 상품을 선택하세요</p>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="g_3">선물용 3kg</label>
+                    <input type="number" value="1" min="0" max="5">개
+
+                </li>
+                <li>
+                    <label><input type="checkbox" name="g_5">선물용 5kg</label>
+                    <input type="number" value="1" min="0" max="3">개
+
+                </li>
+                <li>
+                    <label><input type="checkbox" name="g_5">가정용 5kg</label>
+                    <input type="range" id="k" name="k" value="1" min="0" max="5">
+
+                </li>
+                <li>
+                    <label><input type="checkbox" name="g_5">가정용 5kg</label>
+                    <input type="range" value="1" min="0" max="10">
+
+                </li>
+
+
+            </ul>
+            <p>포장 선택</p>
+            <ul>
+                <li>
+                    <label><input type="radio" name="gift" value="yes">포장1</label>
+                    <label><input type="radio" name="gift" value="no">포장2</label>
+
+
+                </li>
+
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend> 배송정보</legend>
+            <p>주문할 상품을 선택하세요</p>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" name="user" id="user-name">
+
+                </li>
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="addr" name="addr" id="address">
+
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="text" name="email" id="email">
+
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="phone" name="phone" id="phone">
+
+                </li>
+
+                <li>
+                    <label for="rangeInput">숫자를 선택하세요:</label>
+<input type="range" id="rangeInput" name="rangeInput" min="0" max="10" value="5">
+<p>선택한 숫자: <span id="rangeValue"></span></p>
+<script>
+    var rangeInput = document.getElementById("rangeInput");
+    var rangeValue = document.getElementById("rangeValue");
+  
+    rangeInput.addEventListener("input", function() {
+      rangeValue.innerHTML = rangeInput.value;
+    });
+  </script>
+
+                </li>
+
+
+            </ul>
+
+        </fieldset>
+        <div class="button">
+            <input type="submit" value="주문하기">
+            <button type="reset" value="최소하기">취소하기</button>
+        </div>
+    </form>
+   
+
+</div>
+
+</body>
+</html>

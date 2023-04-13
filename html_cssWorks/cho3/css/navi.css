@@ -1,0 +1,11 @@
+#wrap{
+    margin: 0 auto; background-color: beige; }
+ul{list-style: none;margin: 10px; }
+ul li {
+    display: inline-block; margin: 20px;
+    border-top: 2px solid #333;
+    padding: 10px;
+   }
+   nav{width: 800px; text-align: center;}
+    li:hover{background-color: #eee;}
+    section{margin-left: 50px;}

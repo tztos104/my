@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수(클래스)</title>
+    
+</head>
+<body>
+    <script>
+        function person(name, age, isMerried){
+        this.name = name;
+        this.age = age;
+        this.isMerried = isMerried;
+
+        this.info = function(){
+            if(this.isMerried== true){ 
+                console.log("기혼입니다")
+            }
+        else{console.log("미혼입니다") }
+    }}
+
+        let p1 =new person("김연아", 31 , true);
+        console.log(p1.name);
+        console.log(p1.age);
+         p1.info();
+
+       let p2 =new person("이가인",14, false);
+       console.log(p2.name);
+        console.log(p2.age);
+         p2.info();
+    
+
+    </script>
+</body>
+</html>

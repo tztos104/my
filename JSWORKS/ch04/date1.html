@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date 객체</title>
+</head>
+<body>
+    <h2>Date 객체</h2>
+    <p>현재 날짜와 시간 표시</p>
+    <p id="demo"></p>
+
+
+    <p>특정한 날짜와 시간 표시</p>
+    <p id="display"></p>
+
+    <script>
+        //현재 날짜 생성(운영체제 시스템의 날짜와 시간)
+        const date = new Date()
+
+        document.getElementById("demo").innerHTML = date.toLocaleString()
+        console.log(date.toLocaleTimeString())
+
+
+        //특정한 날짜 생성(운영체제 시스템의 날짜와 시간)
+        const date2 = new Date("2023-3-16-22:20")
+
+        document.getElementById("display").innerHTML = date2.toLocaleString()
+        console.log(date2.toLocaleTimeString())
+
+        //날짜
+        document.write("현재년도 : " + date.getFullYear()+"<br>")
+        document.write("현재월 : " + (date.getMonth()+ 1) +"<br>")
+        document.write("현재일 : " + date.getDate()+"<br>")
+        document.write("현재시간 : " + date.getHours()+"<br>")
+        document.write("현재분 : " + date.getMinutes()+"<br>")
+        document.write("현재초 : " + date.getSeconds()+"<br>")
+        console.log(date.toLocaleTimeString())
+
+
+    </script>
+</body>
+</html>

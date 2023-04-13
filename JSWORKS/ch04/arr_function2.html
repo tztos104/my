@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 객체의 함수</title>
+    <script>
+       
+       let numbers = [1, 2, 3];
+        let chars = ['a','b', 'c'];
+
+        // let list = numbers +chars ; 연결
+        let list = numbers.concat(chars);
+
+        document.write(list[2]);
+        for(let i in list)[
+            document.write(list[1]+"<br>")
+        ]
+
+
+
+
+
+        //요소 추가
+        nums.push(4)
+        document.write(nums + " <br>");
+
+        //요소삭제
+        nums.pop();
+        document.write(nums + " <br>")
+
+        //특정한 위치 추가 삭제
+        let animal = ['곰', '닭', '개', '말']
+        animal.splice(2, 1);
+
+        document.write(animal + " <br>")
+
+        animal.splice(1, 0, '소');
+        document.write(animal + " <br>")
+
+        //전체조회
+        for(let i in animal)[
+        document.write(animal[i] + " ")
+        ]
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

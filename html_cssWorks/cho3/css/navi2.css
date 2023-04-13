@@ -1,0 +1,17 @@
+*{margin: 0 ;padding: 0;}
+
+ul{list-style: none;margin-right: 50px; }
+li {
+    display: inline-block; margin: 20px;
+    padding: 10px; color: azure;
+   }
+a{text-decoration: none; box-sizing: 80px;}
+   nav{width: 800px; height: 80px; 
+    background: #006699;  
+    text-align: right; 
+    }
+
+    li:hover{background-color: #eee; color:black}
+    section{margin: 20px;}
+
+#container{width: 1000px; margin: 0px auto;}

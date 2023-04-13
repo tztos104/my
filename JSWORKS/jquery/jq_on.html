@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-click()함수</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <style>  </style>
+</head>
+<body>
+    <h2 id="text">나를 클릭하면, 내가 사라질 것이다.</h2>
+   
+        <script>
+          
+                $(document).ready(function(){
+                    //클릭 이벤트-click() 함수
+                    let sw = true;
+                  
+                    $("#text").on('click',function(){
+                        if(sw){
+                        $(this).css('opacity','0');
+                        sw=false;
+                    }else{
+                    
+                        $(this).css('opacity','1');
+                        sw=true;
+                    }
+                    })})
+                        
+                    
+                
+
+
+        </script>    
+</body>
+</html>

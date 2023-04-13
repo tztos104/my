@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 속성</title>
+    <style>
+        div{width: 200px;
+            height: 200px ;
+            background: #fe5;
+            animation-name: change-box;
+            animation-duration: 500ms;
+            border: 1px solid #000;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes change-box{
+            from{
+                background: #fe5;
+                border: 1px solid #000;
+            }
+            to{
+                background: #6fe;
+                border: 1px solid #ff0000;
+                border-radius: 100px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

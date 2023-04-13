@@ -1,0 +1,24 @@
+.container{border: 1px solid black;
+width: 520px;
+background-color: beige;
+margin: 0 auto;}
+ul li{list-style: none; margin: 10px 0px;}
+
+textarea{ margin: 10px; background-color: beige;}
+form{ margin: 10px; padding: 10px;}
+.button input{cursor: pointer;}
+
+input {
+    background-color: #f2f2f2;
+  }
+  
+  input[type="radio"]:checked::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 5px;
+  }
+  

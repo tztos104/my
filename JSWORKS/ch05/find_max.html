@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열에서 최대값과 최소값 찾기</title>
+</head>
+<body>
+    <script>
+        let number = [33, 35, 12, 42, 54, 45, 100, 23, 55, 500];
+        let sumV = 0;
+        //갯수 -number.length
+        //합계 sumV += number[i]
+        //평균 sumV/number.length
+
+       
+        for(let i=0; i<number.length; i++){
+            sumV+=number[i] 
+        } 
+        let avgV = sumV/number.length
+
+        console.log(number.length)
+        console.log(sumV)
+        console.log(avgV)
+
+        let maxV = number[0]; //맨 처음값을 최대값으로 설정
+        for(let i=1; i<number.length; i++){
+            if(maxV < number[i]){
+                maxV= number[i];
+            }
+            //i=1, 33<35 true maxV=35
+            //i=2, 35>12 false maxV=35
+            //i=3, 35<42 truw maxV=42
+
+        }
+        console.log(maxV)
+        //최소값
+        let minV = number[0];
+        for(let i=1; i<number.length; i++){
+            if(minV > number[i]){
+                minV= number[i];
+            }}
+        console.log(minV)
+
+    </script>
+    
+</body>
+</html>

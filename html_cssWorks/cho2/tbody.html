@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+    <style> 
+    table, th, td, tr{ 
+        border: 2px solid #333;
+        border-collapse: collapse;   
+    padding: 10px; 
+    }
+    table{box-shadow: 3px 3px 0px gray;}
+    thead{
+        background-color: azure;
+    }
+            
+    </style>
+</head>
+<body>
+    <h2>The head, tbody, and tfoot elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>월별</th>
+                <th>저축액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3월</td>
+                <td>50만원</td>
+            </tr>
+            <tr>
+                <td>4월</td>
+                <td>120만원</td>
+            </tr>
+            <tr>
+                <td>5월</td>
+                <td>102만원</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계
+                </td>
+                <td>272만원</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

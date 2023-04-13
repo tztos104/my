@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+  
+
+ 
+
+    <h3>클릭하면 3배로 증가하는</h3>
+    <button type="button" onclick="oneUp()" id="box" >버튼</button>
+    <p id="show"></p>
+    <p id="show"></p>
+   <script>
+
+        let x = 0 ;
+
+        function oneUp(){
+            
+            x= x + 1
+            let num = 3*x
+            document.getElementById("show").innerHTML = num
+        }
+       // let num =oneUp();
+        
+        
+        
+        </script>
+
+
+</body>
+</html>

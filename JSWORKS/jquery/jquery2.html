@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 사용</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+
+</head>
+<body>
+        <h2>자바 스크립트-querySelectorAll()</h2>
+        <ul>
+            <li class="list">봄</li>
+            <li class="list">여름</li>
+            <li class="list">가을</li>
+            <li class="list">겨울</li>
+
+        </ul>
+        <hr>
+        <h2>제이쿼리- 선택자</h2>
+        <ul class="list">
+            <li>봄</li>
+            <li>여름</li>
+            <li>가을</li>
+            <li>겨울</li>
+
+        </ul>
+
+
+
+        <script>
+            let list = document.querySelectorAll(".list")
+            console.log(list)
+
+            list[0].style.color ="blue"
+            list[0].style.background ="#ccc"
+            list[1].style.background ="#0f0"
+            list[2].style.background ="#ccc"
+            list[3].style.background ="#0f0"
+            list[3].style.color ="red"
+            
+            //제이쿼리
+             $(document).ready(function(){
+                $(".list li:first-child").css('color', 'blue');
+                //even 순번에 짝수일때
+                $(".list li:even").css('background', '#ccc');
+                $(".list li:odd").css('background', '#0f0');
+                $(".list li:last-child").css('color', 'red');
+                $(".list li:nth-of-type(4)").css('color', 'red');
+
+             })
+
+
+             
+        </script>
+
+</body>
+</html>

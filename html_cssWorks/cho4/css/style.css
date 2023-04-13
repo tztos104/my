@@ -1,0 +1,12 @@
+.container{ margin: 0 auto;}
+#box{border: 1px solid black;
+    width: 700px;
+    margin: 10px 0px;border-top-right-radius: 20px;
+border-top-left-radius: 20px;}
+#box2{border: 1px solid black;
+    width: 700px;
+    margin: 20px 0px;border-bottom-left-radius:  20px;
+border-bottom-right-radius: 20px;}
+    table{border: 1px solid black; border-collapse: collapse;}
+    tr,th,td{border: 1px solid black; }
+    

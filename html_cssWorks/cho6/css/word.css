@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body{background: #f3e9ae;}
+#container{width: 320px; margin: 0 auto;}
+.card{width: 320px; height: 500px; background: #fff; border-radius: 20px;
+ position: relative; margin-bottom: 10px;}
+.card img{border-radius: 20px; padding: 10px;}
+.word{position: absolute; top:300px;  left: 20px;}
+.card .word h2{font-size: 1.4em; text-align: center;}
+
+/* 테블릿 기준 */
+@media screen and (min-width: 768px){
+    #container{width: 570px; margin: 10px;}
+    .card{width: 600px; height:270px; position: relative;}
+    .word{position: absolute; top: 50px ; left: 320px}
+    
+}
+/* pc기준 */
+@media screen and (min-width:1024px) {
+    #container{width: 1710px;}
+    .card{width: 320px; height:500px; margin-right: 10px; position: relative; float: left;}
+    
+    .word{position: absolute; top: 300px ; left:10px;}
+
+    
+}

@@ -1,0 +1,6 @@
+h1{color:#0000ff; text-align: center; text-shadow:11px,5px,20px red;}
+p{text-align:center;
+line-height: 1.5;}
+a{ text-decoration: none;}
+/* hover 마우스 올렸을때 동작 */
+a:hover{text-decoration: underline;}

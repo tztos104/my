@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입-유효성 검사</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div id="container">
+    <h2>회원 가입</h1>
+        <form action="processJoin" method="post" name="regForm">
+              
+        <ul>
+       <li>
+        <label for="user-id" class="field"> 아이디 </label>
+        <input type="text" id="uid" name="id" 
+        placeholder="4~12자 사이에 영문과 숫자로 입력" required>
+    </li>
+       <li>
+        <label for="email" class="field"> 이메일 </label>
+        <input type="email" id="email" name="email"  required>
+    </li>
+       <li>
+        <label for="user-pw1" class="field">비밀번호 </label>
+        <input type="password" id="user-pw1" name="pw1"
+        placeholder="8자리 이상"  required>
+    </li>
+       <li>
+        <label for="user-pw2" class="field">비밀번호 확인</label>
+        <input type="password" id="user-pw2" name="pw2" required>
+    </li>
+       <li>
+        <label class="field">메일링 수신</label>
+        <label ><input type="radio" value="yes"  name="mailing"> 예</label>
+        <label ><input type="radio" value="no"  name="mailing"> 아니요</label>
+
+    </li>
+       <li>
+        <input type="submit" value="가입하기" class="button" onclick="checkMember()">
+        <input type="reset" value="취소하기"  class="button">
+
+    </li>
+        </ul>
+    </div>
+</form>
+<script src="./js/validation2.js"></script>
+
+</body>
+</html>
+

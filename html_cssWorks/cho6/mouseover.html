@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 속성 사용</title>
+    <style>
+        div{
+            width: 250px;
+            border: 5px solid #0f0;
+            padding: 20px;
+            position: absolute;
+            top: 150px;
+            left: 100px;}
+        h1{text-align: center; margin: 0;}
+        div:hover{
+            -webkit-transform:rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            border: 1px double #f2fd02;
+            border-radius: 100px;
+            transition: 1s ease-out
+            /* ease-in : 시작을 느리게함
+               ease-out: 느리게 끝남 */
+        }       
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Mouse Over</h1>
+
+    </div>
+    
+</body>
+</html>

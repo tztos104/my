@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 속성</title>
+    <style>
+        /* display: flex 속성은 부모 박스에서 사용 자식을 원하는 방식으로 배치할 수 있음 */
+        #wrap{
+            display: flex;
+        }
+        div.box{
+            width:200px;
+            height: 100px;
+            background: #0f0;
+            margin: 10px;
+            
+            /* float: left; */
+            /* display: inline-block; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">    
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

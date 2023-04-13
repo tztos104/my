@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규 표현식</title>
+</head>
+<body>
+    <p id="demo">RegExp 객체사용-test() 함수 사용</p>
+    <script>
+       //문자열 일치하는지 체크
+       //RegExp(정규표현식)
+       //pattern 객체생성
+       let pattern = new RegExp(/HeLLo/i)
+       let str ="Hello~my"
+       let match = pattern.test(str)
+       document.write(match+"<br>")
+
+       let pattern2 = /hello/i;
+       let match2 = pattern2.test("hellodnfsnf")
+       document.write(match2+"<br>")
+
+       let regEx= /^[0-9a-z]+$/
+       id = "a24332B";
+       
+       let mat= regEx.test(id);
+       document.write(mat)
+    
+    
+    </script>
+</body>
+</html>

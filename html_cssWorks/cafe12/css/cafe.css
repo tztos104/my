@@ -1,0 +1,48 @@
+@charset "utf-8";
+*{margin: 0 ; padding: 0; box-sizing: border-box;}
+#container{width: 100%;}
+
+/* header 스타일 */
+header{width: 100%; height: 320px;}
+nav{width: 100%; height: 60px; background: #000; }
+nav #main-nav{list-style: none; text-align: center;} 
+nav #main-nav li{display: inline-block; line-height: 60px; margin: 0 30px;}
+nav #main-nav li a{text-decoration: none; color: white;}
+nav #main-nav li a:hover{color: greenyellow;}
+#main-pic img{width: 100%; height: 260px;}
+
+/* section 영역 */
+section{height: 300px; margin: 0px auto; padding: 15px 5%;}
+section:nth-of-type(2){background: #eee;}
+section #page-title{margin: 20px 0;}
+section p{line-height: 3em;}
+.content .photo{display:none;}
+#choice .content h2{margin-bottom: 20px;}
+#choice .content ol{padding-left: 30px;}
+#choice .content ol li{line-height: 2em;}
+
+
+footer{height: 80px; border-top:2px solid #222 ;}
+#bottom-menu{list-style: none; margin: 10px 10px 10px 40px;}
+#bottom-menu li{display: inline-block; margin: 10px 0; padding: 0 10px;  border-right:1px solid #ccc;}
+#bottom-menu li a{text-decoration: none;color: #444; }
+#bottom-menu li:last-child{border:none }
+/*테블릿  */
+@media screen and (min-width:780px) {
+    header{height: 340px;}
+    #main-pic img{height: 290px; }
+    #intro, #choice{float: left; width: 50%;}  
+    #map{clear: both;}
+    #map .photo{display: block; float: left; margin-right: 50px;} 
+}
+/* pc 1200 */
+@media screen and (min-width: 1200px) {
+    header{height: 380px;}
+    #main-pic img{height: 320px; }
+    section{height: 350px;}
+    #intro, #choice, #map{width: 100%; padding: 10px 5%;}  
+    .content .photo{display:block; }
+    section p{line-height: 2.5;}
+    #intro .photo, #map .photo {float: left; margin-right:  20px;}
+    #choice .photo{float: right;}
+}

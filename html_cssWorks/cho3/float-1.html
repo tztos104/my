@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성</title>
+    <style>
+        #warp{width: 1000px; 
+            height: 100px;
+            margin: 0 auto;}
+        
+            div{margin: 10px;
+            padding: 10px;
+        /* float: right; */
+    }
+       .box1{
+            background: blue;
+           
+            float: right
+        }
+        .box2{
+            background: rgb(255, 0, 0);
+            
+            float: right
+        }
+        .box3{
+            background: rgb(0, 255, 55);
+           
+            float: right
+        }
+        .box4{
+            background: rgb(255, 115, 0);
+            clear: both;
+            float: right
+            /* float: right clear는 속성해제-위에있는 box3오른족 배치 속성을 해제 */ 
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</div>
+</body>
+</html>

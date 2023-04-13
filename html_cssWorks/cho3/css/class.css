@@ -1,0 +1,8 @@
+
+
+            *{ <link rel="preconnect" href="https://fonts.googleapis.com"
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">;}
+p{  
+    line-height: 2;}
+.redText:hover{ color: red; font-size: larger; text-shadow: 2px 2px 0px red;}

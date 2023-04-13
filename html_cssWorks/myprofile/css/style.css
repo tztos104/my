@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+  }
+  .img {
+    justify-content: center;
+  }
+  #porfile-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #2B3856;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+  border-radius: 70%
+  }
+  
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 목차 */
+  .index h3 {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* 목차 각 항목 반응형 커서 */
+  .index h3:hover {
+    font-size: 1.1em;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
+  section {
+    margin-left: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p {
+    margin: 0;
+  }
+  
+  
+  /* ABOUT part*/
+  
+  .name {
+    font-size: 65px;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+  }
+  .contacts {
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+  }
+  .main-introduction {
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0.8;
+  }
+  /* sns 픽토그램 */
+  .fa-brands {
+    color: black;
+    opacity: 0.4
+  }
+  .fa-solid {
+    color: black;
+    opacity: 0.4
+  }
+  .sns-pictogram i {
+    margin-right: 40px;
+  }
+  /*픽토그램 반응형 커서*/
+  footer i:hover {
+    transform: translate(0, -3px);
+  }
+  
+  
+  /* HISTORY 영역 */
+  
+  .history img {
+    margin-right: 7px;
+    margin-top:10px;
+    border: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-image-outset: 10px;
+    width: 120px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* 커서 올릴 시 이미지 크게(모든 이미지 파일에 적용) */
+  img:hover {
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7); /* 크롬 */
+    -moz-transform: scale(1.7); /* 파이어폭스 */
+    -o-transform: scale(1.7); /* 오페라 */
+    z-index: 1;
+    align-items: center;
+  }
+  .history p{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  /* 경험 영역 */
+  .about_list{list-style: none; text-align: center;}
+  .about_list img{float: left ;width:120px; height: 150px;}
+  .about_list li{display: inline-block; margin: 5px 5px; 
+               position: relative; overflow: hidden; }
+  .about_list .caption{
+      width:120px; height: 150px; position: absolute; top: 150px;
+      background: url(../images/shadow.png);opacity: 0.8 ; transition: all 0.5s;
+      margin: 0;}
+  .about_list li:hover .caption{transform: translateY(-150px ); padding: 5px;}
+  .about_list h2{ padding: 10px 10px 0px;}
+  .about_list .caption h2{
+    clear: both; color:#fff; line-height: 2.5; font-size: 20px;
+    margin: 10px;}
+  .caption p{color:#fff; line-height: 2.5; font-size: 10px;}
+  #spec_li ul{padding-left: 30px; line-height: 1.8;}
+  #spec_li2 ul{padding-left: 30px;line-height: 1.8;}
+  
+
+  /* for layout */
+  .contents1 {
+    width: 700px;
+  }
+  .contents2 {
+    width: 700px;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  /* 일한 기간 */
+  .year {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    opacity: 0.5;
+  }
+  
+  
+  
+  /* EDUCATION part */
+  .history {
+    font-size: 65px;
+    font-weight: 700;
+    margin-top:25px;
+    margin-bottom:25px;
+    font-family: 'Oswald', sans-serif;
+  }
+ 
+  .History .his{font-size: 30px;
+    font-family: 'Oswald', sans-serif; text-align: center;
+}
+.History #story{
+    width: 880px;
+}
+  
+  /* INTERESTS part */
+  .whatilove-text {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+  .whatilove-img {
+    margin-bottom: 20px;
+  }
+  .whatilove-img img {
+    width:150px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* 하단 코멘트 */
+  .interests .comment {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .education {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+  

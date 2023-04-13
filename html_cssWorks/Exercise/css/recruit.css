@@ -1,0 +1,18 @@
+
+body{width: 600px;
+    height: 800px; 
+    background-color: #02233b;
+    margin: 0 auto; padding: 10px;}
+
+#container{
+    width: 700px;
+    height: 700px;
+    background: url(../images/mic.png) no-repeat right bottom;
+    background-color: #fff; padding: 10px;
+     }
+h1{background-color: #004344;color: #fff; padding: 10px;
+margin:20px; text-align: center;}
+h2{text-align: center;}
+h3{margin: 20px;}
+li{list-style: none; text-align:left; margin: 30px;}
+body{}

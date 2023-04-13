@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 객체 -map() 함수</title>
+</head>
+<body>
+        <h2>map() 함수- 새로운 배열을 생성해 줌</h2>
+        <p id="demo"></p>
+
+        <script>
+            //{속성 : 속성값}
+    // let obj = {과일 : '사과', 차 : '소나타' }
+    //     console.log(obj.과일)
+
+            const persons = [
+                {이름: '영준', 성 : '이'},
+                {이름: '윅', 성 : '존'},
+                {이름: '메롱', 성 : '똥'},
+                {이름: '천재', 성 : '나'},
+                {이름: '나우시카', 성 : '바람'},
+                {이름: '어판', 성 : '제'},
+                {이름: '빛', 성 : '물'},
+                {이름: '한개', 성 : '밥'},
+                {이름: '졸려', 성 : '개'},
+                {이름: '고파', 성 : '배'},
+                {이름: '험용', 성 : '수'}
+            ];
+
+            console.log(persons[2].성 +" "+ persons[0].이름)
+
+            for(let i= 0; i<persons.length; i++){
+                let a=Math.floor(Math.random()*persons.length)
+                let b=Math.floor(Math.random()*persons.length)
+                console.log(persons[a].성 +" "+ persons[b].이름)
+            }
+
+
+            let arr = persons.map(myFunction);
+
+            document.getElementById("demo").innerHTML = arr;
+
+            function myFunction(item){
+                return [item.성, item.이름].join("")
+            }
+
+
+
+
+</script>
+
+
+</body>
+</html>

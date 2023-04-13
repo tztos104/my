@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색폼</title>
+</head>
+<body>
+    <!-- acyion:경로(주소)에 있는 파일 -->
+    <!-- method: post-보안, get:보안필요없는데이용
+         search.jsp: 서버사이드측 언어
+         html-->
+    <form action="./jsp/search.jsp" method="get">
+        <input type="text" name="sform"> <!-- 검색창 만드는-->
+        <input type="submit" value="검색"> <!-- 버튼-->
+        <!-- 쿼리스트링 형태 서버.jsp?sform="강남역" -->
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+#container{width: 1000px; margin: 30px auto;}
+h1{text-align: center; margin-top: 30px;}
+.prod_list{list-style: none; text-align: center;}
+.prod_list img{float: left}
+.prod_list li{display: inline-block; margin: 5px 10px; 
+             position: relative; overflow: hidden;}
+.prod_list .caption{
+    width:300px; height: 200px; position: absolute; top: 200px;
+    background: rgba(0, 0, 0, 0.5);transition: all 0.5s;}
+.prod_list li:hover .caption{transform: translateY(-200px); }
+.prod_list h2{padding: 10px 20px 0px;}
+.prod_list .caption h2, p{color:#fff; line-height: 2.5;}
