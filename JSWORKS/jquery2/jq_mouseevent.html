@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        img{width:  300px; height: 200px;}
+        .pic{width:300px ; background: #333;}
+        .pic img{
+            transform: translateX(-300px);
+            transition: 2s ease-out;
+            vertical-align: bottom;
+        }
+        .pic img.on{
+            transform: translateX(0px);
+        }
+        button{
+
+            width: 300px ;
+            height: 50px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pic">
+
+        <img src="../images/bg2.jpg" alt="배경">
+        
+        <button> Hover event</button>
+
+    </div>
+    <script>
+        $(function(){
+            $('button').mouseover(function(){
+                $('.pic img').toggleClass('on')
+            });
+            $('button').mouseout(function(){
+                $('.pic img').toggleClass('on')
+            });
+
+
+        })
+    </script>
+</body>
+</html>
