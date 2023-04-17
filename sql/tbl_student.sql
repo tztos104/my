@@ -24,3 +24,5 @@ CREATE TABLE tbl_student(
        
         DESC age;
 ORDER BY sal DESC;
+
+s
