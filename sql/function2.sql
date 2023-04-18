@@ -48,3 +48,7 @@ SELECT empname,
         SELECT * FROM customer, orders
         WHERE CUSTOMER.custid = orders.custid;
         
+        
+        
+        
+        

@@ -12,5 +12,7 @@ CREATE TABLE tbl_class(
       ('102','전기전자공학과','02-1234-4567','B동 4층'); 
          INSERT INTO tbl_class VALUES 
       ('103','화학공학과','02-1234-5678','B동 5층'); 
+          INSERT INTO tbl_class VALUES 
+      ('104','유아교육과','02-1234-5548','C동 2층'); 
       
       SELECT * FROM tbl_class;

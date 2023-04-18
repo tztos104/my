@@ -31,7 +31,39 @@ VALUES(seq.NEXTVAL, '가입인사입니다.', '다다다','안녕하세요');
 
 
 --게시글 검색
-SELECT*FROM board;
+SELECT*FROM board
+ORDER BY regdate ;
+
+--ROWNUM : 오라클이 제공하는 논리적인 일련번호
+--rownum 은 반드시 1을 포함해야함.
+SELECT ROWNUM, bno, title, content
+FROM board
+WHERE ROWNUM >0 AND ROWNUM <=10;
+--페이지 처리
+SELECT * 
+FROM
+(SELECT ROWNUM rn, bno, title, content
+FROM board)
+WHERE rn >=11 AND rn <=20; --ROWNUM의 별칭을 사용하면 가능
+
+--ROWID
+--데이터를 구분하는 유일한 값
+--ROWID를 통해서 테이터 파일, 어느 블럭에 저장되어 있는지 알 수 있음
+SELECT ROWID, bno, title, content
+FROM board;
+
+SELECT ROWID, bno, title, content
+FROM board
+WHERE ROWID = 'AAAS86AAHAAAAFcAAA';
+
+
+--재귀 복사(자료삽입)
+--INSERT INTO(칼럼) (SELECT 칼럼 FROM 테이블이름)
+INSERT INTO board(bno, title, writer, content)
+    (SELECT seq.nextval, title, writer, content From board);
+    
+
+--ORDER BY regdate;
 
 ---작성자가 관리자인 게시글을 검색하시오
 SELECT * FROM board
@@ -45,5 +77,8 @@ WHERE bno= 2;
 --3번글  삭제
 DELETE FROM board 
 WHERE bno=3;
+
+
+
 
 commit

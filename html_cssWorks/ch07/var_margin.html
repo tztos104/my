@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변크기</title>
+    <style>
+            #wrap{
+            width: 900px;
+            /* width: 960px; */
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+            }
+           
+            #wrap div{
+                width: 31.25%;
+                height: 100%;
+                display: inline-block;
+            }
+
+            #wrap div:first-child{
+                margin-right: 37.5%;
+                background: #0f0;
+            }
+            
+            #wrap div:first-child+ div{
+                
+                background: #00f;
+            }
+            
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        
+            <div></div><div></div>
+       
+
+    </div>
+</body>
+</html>
