@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+#wrap{
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
+	border: 4px solid #000;
+	background: #e9e4bc;
+}
+.container{
+	width: 93.75%;
+	height:492px;
+	margin: 0 auto;
+	border: 4px solid #000;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.container div{
+	/* display: inline-block; */
+	height: 100%;
+}
+.container div:first-child{
+	width: 33.3%;
+	background: #e75f5f;
+}
+.container div:first-child+ div{
+	width: 66.7%;
+	background: #cffd00;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+		<div></div>
+		<div></div>
+		</div>
+
+
+	</div>
+</body>
+</html>
