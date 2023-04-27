@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div id="container">
+    <header>
+   <h1> 메인 페이지</h1>
+    </header>
+    <section>
+        <h3> 주소 표시줄에 아래의 경로를 입력하세요</h3>
+        <p><a href="http://127.0.0.1:5000/season"> http://127.0.0.1:5000/season</a> -> 계절 출력</p>
+        <img src="{{url_for('static',filename='prod1.jpg')}}" alt="커피잔" id="pic">
+    </section>
+    </div>
+    <script src="{{url_for('static',filename='main.js')}}">
+
+    </script>
+
+</body>
+</html>
