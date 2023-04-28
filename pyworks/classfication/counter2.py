@@ -3,10 +3,9 @@
 
 
 class Counter:
-    x = 0  #클래스 변수
-
     def __init__(self):
-        Counter.x += 1 #클래스 변수이므로 클래스로 직접 접근
+        self.x = 0
+        self.x += 1
     def get_count(self):
         return self.x
 
