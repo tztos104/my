@@ -2,15 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>회원가입</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>안녕하세요</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
     <div id="container">
-    <header>
-   <h1> 회원 목록</h1>
-    </header>
-    <section id="list">
+        {% if not session %}
+        <script>
+            alert("회원만 볼 수 있습니다")
+            location.href = "http://127.0.0.1:5000/login"
+        </script>
+        {% endif %}
+   {% include 'header.html'%}
+    <section id="memberlist">
+        <h2>회원목록</h2>
+
         <table>
             <thead>
             <tr>
@@ -18,22 +24,32 @@
                 <th>비밀번호</th>
                 <th>이름</th>
                 <th>성별</th>
+                <th>가입일</th>
             </tr>
-
             </thead>
             <tbody>
+            {% for i in rs%}
             <tr>
-                <td>{{ mid }}</td>
-                <td>{{ pwd }}</td>
-                <td>{{ name }}</td>
-                <td>{{ gender }}</td>
+                <td>{{ i[0] }}</td>
+                <td>{{ i[1] }}</td>
+                <td>{{ i[2] }}</td>
+                <td>{{ i[3] }}</td>
+                <td>{{ i[4] }}</td>
             </tr>
-
+            {% endfor %}
             </tbody>
+
         </table>
+
+<!--        {{ rs }}-->
+<!--        {% for i in rs%}-->
+<!--        {{ i }} <br>-->
+<!--        {%endfor%}-->
 
 
     </section>
+       {% include 'footer.html'%}
+
     </div>
     <script src="{{url_for('static',filename='main.js')}}">
 

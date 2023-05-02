@@ -17,6 +17,9 @@ class Converter(ScaleConverter):
         #return self.factor * value + self.offset
         return super().convert(value) + self.offset
 
-conv = Converter('C', 'F', 1.8, 32)
-print("converting 21c")
-print(f'{conv.convert(21):.2f}{conv.units_to}')
+
+
+if __name__ =="__main__":
+    conv = Converter('C', 'F', 1.8, 32)
+    print("converting 21c")
+    print(f'{conv.convert(21):.2f}{conv.units_to}')
