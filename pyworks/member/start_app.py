@@ -43,6 +43,7 @@ def register():
         cursor = conn.cursor()
         sql =f"INSERT INTO member(memberid, passwd, name, gender)\
                 VALUES ('{id}', '{pw}', '{name}', '{gender}')"
+        session['userid'] = request.form['memberid']
         cursor.execute(sql)
         conn.commit()
         conn.close()

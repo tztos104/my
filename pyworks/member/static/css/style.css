@@ -31,6 +31,7 @@ nav{float: right; width: 70%; padding-top: 40px;}
 #main{clear: both; margin: 80px auto;}
 #main .img1{margin: 20px auto; text-align: center;}
 #main .img1 img{border-radius: 5px;}
+#main #demo{text-align: center}
 
 /* footer 스타일 */
 footer{height: 80px; border-top: 2px solid #222;}
@@ -50,12 +51,13 @@ footer{height: 80px; border-top: 2px solid #222;}
 /*register 스타일 */
 #register{width: 500px; margin: 40px auto;}
 #register form{margin: 30px auto;}
-#register form ul li{margin: 30px;}
+#register form ul li{margin: 30px; height: 30px}
 #register form label{width: 100px; float: left; padding-left: 15px; padding-right: 15px; }
 #register form label.radio{width: 80px; padding-left: 15px; padding-right: 15px; }
-#register form .button{clear:both; margin: 30px 0 auto; }
-#register form input[type='submit'], input[type='reset']{width: 80px; height:30px; margin-left: 120px}
-#register form input[type='text'], input[type='password']{width: 200px; height:30px; }
+#register form .button{ margin: 0px 0 auto;}
+#register form input[type='button'], input[type='reset']{width: 100px; height:30px; margin-left: 120px}
+#register form input[type='text']{width: 250px; height:25px; }
+#register form input[type='password']{width: 250px; height:25px; }
 
 /* login 스타일 */
 #login {width: 500px; margin: 40px auto;}
