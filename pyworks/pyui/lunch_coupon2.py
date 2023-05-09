@@ -4,6 +4,7 @@ from tkinter import *
 
 
 
+a = []
 
 def click():
     lotto = []
@@ -12,8 +13,13 @@ def click():
         num = random.randint(1, 45)
         if num not in lotto:
             lotto.append(num)
+
+
+
     output.delete(0.0, END)
+    lotto.sort()
     output.insert('0.7', lotto)
+
 
     """
     namelist2 = []

@@ -5,7 +5,8 @@ from tkinter import *
 def click(key):
     if key == '=':
         try:
-            value = eval(display.get().replace('＋', '+' ).replace('×', '*' )) #입력된 계산값
+            value = eval(display.get().replace('＋', '+' ).replace('×', '*' ).replace(
+                '÷', '/' ).replace('제곱', '**' )) #입력된 계산값
             display.delete(0, END)
             result = str(value)[0:10] #소수점 포함 10자리까지 출력
             display.insert(END, result)
@@ -14,6 +15,7 @@ def click(key):
             display.insert(END, "---오류---")
     elif key == 'C':
         display.delete(0, END) #첫번째 문자부터 삭제
+
     else:
         display.insert(END, key)
 
@@ -52,7 +54,7 @@ for btn_text in num_pad_list:
 operator = Frame(root)
 operator.grid(row=1, column=1, sticky=E)
 operator_list = [
-    '합', '평',
+    '÷', '평',
     '제곱','루트',
     '', '',
     '', ''

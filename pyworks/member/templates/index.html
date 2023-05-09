@@ -9,6 +9,9 @@
 <body>
     <div id="container">
    {% include 'header.html'%}
+        <div id="main-pic">
+            <img src="{{url_for('static', filename='images/header1.jpg')}}" id="pic">
+        </div>
     <section id="main">
         <h2> 안녕하세요!</h2>
         <div class="img1">
@@ -19,9 +22,6 @@
        {% include 'footer.html'%}
 
     </div>
-    <script src="{{url_for('static',filename='main.js')}}">
-
-    </script>
 
 </body>
 </html>

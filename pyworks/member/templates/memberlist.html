@@ -20,6 +20,7 @@
         <table>
             <thead>
             <tr>
+                <th>번호</th>
                 <th>아이디</th>
                 <th>비밀번호</th>
                 <th>이름</th>
@@ -30,6 +31,7 @@
             <tbody>
             {% for i in rs%}
             <tr>
+                <td>{{ loop.index }}</td>
                 <td>{{ i[0] }}</td>
                 <td>{{ i[1] }}</td>
                 <td>{{ i[2] }}</td>
