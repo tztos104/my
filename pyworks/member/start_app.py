@@ -82,4 +82,27 @@ def logout():
     session.clear() #모든 세션 삭제
     return redirect(url_for('index'))
 
+@app.route('/boardlist')
+def boardlist():
+    conn = getconn()
+    cursor = conn.cursor()
+    sql = "SELECT * FROM board"
+    cursor.execute(sql)
+    boardlist = cursor.fetchall()
+    #print(boardlist)
+    #for board in boardlist:
+        #print(board)
+    conn.close()
+    return render_template('boardlist.html', boardlist= boardlist)
+
+
+    #return render_template('boardlist.html', cart=cart, cartlist= cartlist)
+
+#글스기
+@app.route('/writing')
+def writing():
+
+    return render_template('writing.html')
+
+
 app.run()
