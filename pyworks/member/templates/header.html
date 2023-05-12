@@ -16,7 +16,8 @@
                         <li><a href="{{url_for('boardlist')}}">글목록</a></li>
                         <li><a href="{{url_for('writing')}}">글쓰기</a></li>
                     </ul></li>
-                <li><a href="{{url_for('logout')}}"> ({{ session['userid'] }}님)로그아웃</a></li>
+                <li><a href="{{url_for('logout')}}">
+                    <span class="session">({{ session['userid'] }}님)</span>로그아웃</a></li>
                 {% else %}
                 <li><a href=""> 회원</a>
                     <ul>

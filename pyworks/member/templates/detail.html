@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='js/main-js.js')}}"></script>
+</head>
+<body>
+    <div id="container">
+   {% include 'header.html'%}
+        <div id="main-pic">
+            <img src="{{url_for('static', filename='images/header1.jpg')}}" id="pic">
+        </div>
+    <section id="detail">
+        <h2> 글 상세보기</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="text" name="title" value="{{ board[1] }}" readonly>
+                </td>
+            </tr>
+             <tr>
+                <td><textarea name="content" readonly>{{board[2]}}</textarea></td>
+
+              </tr>
+            <tr>
+            <td>
+                <input type="text" name="memberid" value="글쓴이 : {{board[5]}}" readonly>
+
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <a href="{{url_for('boardlist')}}"><button type="button">글목록</button></a>
+                {% if session['userid'] == board[5] %}
+                <a href="{{url_for('update',bno=board[0])}}"> <button type="button">수정</button></a>
+                 <a onclick="return confirm('정말로 삭제하시겠습니까?')" href="{{url_for('delete', bno=board[0])}}">
+                     <button type="button">삭제</button></a>
+                {% endif %}
+            </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+       {% include 'footer.html'%}
+
+    </div>
+
+</body>
+</html>

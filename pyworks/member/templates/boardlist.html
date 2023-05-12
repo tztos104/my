@@ -28,7 +28,7 @@
             {%for board in boardlist%}
             <tr>
                 <td>{{ board[0]}}</td>
-                <td><a href="">{{board[1]}}</a> </td>
+                <td><a href="{{url_for('detail', bno=board[0])}}">{{board[1]}} </a></td>
                 <td>{{ board[3]}}</td>
                 <td>{{ board[4]}}</td>
                 <td>{{ board[5]}}</td>
