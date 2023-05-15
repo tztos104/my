@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+              <!-- 로고 -->
+              <div id="logo">
+                <h1><a href="./index.html">Dream Jeju</a></h1>
+
+            </div>
+                 <!-- 상단메뉴 -->
+                <nav>
+                    <ul id="topMenu">
+                        <li><a href="./index.html">제주여행</a></li>
+                        <li><a href="./product.html">레드향 소개</a></li>
+                        <li><a href="./qna.html">질문/답변 게시판</a></li>
+                        <li><a href="./aboutme.html">About me</a></li>
+                    </ul>
+
+                </nav>         
+          
+
+        </header>
+    <form action="./legister.jsp" method="post" class="register">
+      
+        <table id="tb1_write">
+            <h1>글쓰기</h1>
+        <tr>
+            <td><input type="text" name="title" class="w_title" placeholder="글 제목" required size="58"></td>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="content"cols="60" rows="20"
+                placeholder="글 내용" required></textarea>
+            </td>
+        <tr>
+            <td colspan="2">
+                <input id="write" type="submit" value="글쓰기">
+                <input id="write" type="reset" value="취소">
+
+            </td>
+
+        </tr>
+
+
+        </tr>
+
+    </table>
+    
+    
+    </form>
+    <footer>
+        <ul id="bottomMenu">
+            <li><a href="#">회사 소개 </a></li>
+            <li><a href="#">개인정보 처리방침 </a></li>
+            <li><a href="#">여행 약관 </a></li>
+            <li><a href="#">사이트맵 </a></li>
+        </ul>
+
+    </footer>  
+</div>
+</body>
+</html>

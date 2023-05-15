@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지 크기</title>
+    <style>
+        div{ 
+            width: 1280px;
+            height: 840px;
+            background: url(./images/bg.jpg) no-repeat;
+            border: 1px solid #ccc      ;
+            margin-bottom: 10px
+        }
+        .box1{
+            background-size: auto;
+        }
+        .box2{
+            background-repeat: no-repeat;
+            background-size: 200px;
+        }
+        .box3{
+            background-repeat: no-repeat;
+            background-size: 60%;   /*박스 크기. 400px*0.6=240px*/
+            background-position: right top;
+        }
+        .box4{
+            background-size: contain;   /*이미지가 축소되어 비율대로 보여줌*/
+                }
+        .box5{
+            background-size: cover;   
+                }        
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

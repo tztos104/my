@@ -1,0 +1,16 @@
+/* 공통 영역 */
+*{margin: 0; padding: 0;}
+ol, ul, li {list-style: none}
+a{color:#919090; text-decoration:none}
+
+/* content 영역 */
+#content{width: 1000px; margin: 30px auto;}
+#content h3{padding: 20px;}
+.accordio_box ol li{width: 100%; border-top:4px solid #EA657B;}
+.accordio_box ol li h4{padding: 0px 20px 20px 0px; margin :20px 20px 0 30px; 
+    cursor:pointer; background: url(../images/bullet_down.png) no-repeat right; }
+.accordio_box ol li.on h4{background:url(../images/bullet_up.png) no-repeat right;}
+.accordio_box ol li h4 span{margin-right: 10px; font-weight: 900}
+.accordio_box ol li p{visibility: hidden; line-height: 2;}
+.accordio_box ol li.on p{padding: 30px 100px; background: #eee; visibility: visible;}
+

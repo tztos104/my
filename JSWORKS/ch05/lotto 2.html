@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 추첨</title>
+</head>
+<body>
+    <h2>로또 추첨</h2>
+    <button onclick="pic()" type="button">당첨자는?</button>
+    <p id="show"></p>
+    <script>
+    function pic(){
+        let show = document.getElementById("show");
+        let lotto = new Array(6);
+    
+        let result= "번호 :"+lotto;
+        result += "당첨자";
+
+        for(let i=0; i<lotto.length; i++){
+            let num= Math.floor(Math.random()*45)+1;
+            lotto[i] = num
+           
+            
+            for(let j=0; j<i; j++){
+                    if(lotto[j] == lotto[i]){
+                       
+                        i--;
+                    }
+                       
+            }
+
+        }
+        
+        for(let i=0; i<lotto.length; i++){
+            if(i== lotto.length-1){
+              resurt+=  lotto[i]
+            }else{
+                resurt+= lotto[i];
+
+            } 
+            
+            show.innerHTML =result
+
+
+        }
+    
+    }
+   
+        
+
+
+    </script>
+
+</body>
+</html>

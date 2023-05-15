@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute 속성</title>
+    <style>
+       /* relativ 가 부모속성 이게 있어야지 absoluet 속성을 사용할 수 있음 */
+       
+       /* 너비 100, 높이 100 */
+        #box1{
+            width:100px; height:100px ; background-color: #000;
+             /* 위: 50px 왼쪽 100px 위치이동 */
+            position: absolute; top: 100px; right: 100px;
+                }
+        #box2{
+            width:100px;  background-color: #991616; padding: 20px;
+            float: left; margin-right: 10px;
+                }
+        #box3{
+            width:200px;  background-color: #fbff00; padding: 20px;
+            float: left; position:relative; top:30px; left: -50px;
+                 }
+        #box4{
+            width:100px; height:100px ; background-color: #ff4949;
+            float: left; position:relative; top:30px; left:-60px;
+                }
+        #box5{
+            width:100px; height:100px ; background-color: #4400ff;
+             /* 위: 50px 왼쪽 100px 위치이동 */
+            position: absolute; bottom: 500px; right: 100px;
+                }
+    
+    </style>
+</head>
+<body>
+    <div id="box1">박스1 </div>
+    <div id="box2"> 박스2</div>
+    <div id="box3"> 박스3</div>
+    <div id="box4"> 박스4</div>
+    <div id="box5"> 박스5</div>
+</body>
+</html>

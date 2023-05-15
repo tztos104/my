@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case 문</title>
+    <style> body{
+        background-color: rgb(1,1, 93);
+        color: #ececec;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+}
+strong{
+    color: yellow;
+    text-shadow: 2px 2px 0px gainsboro;
+    font-size: 50px;
+
+}
+    
+    
+    </style>
+    <script>
+            //1.마켓팅 2.개발 3.디자인
+            let session = prompt("1-마켓팅,2-개발,3-디자인") ;
+           
+            switch(session){
+                case '1': 
+                    document.write("마켓팅 세션은 <strong>201호</strong>에서 진행됩니다.");
+                    break;
+                case '2': 
+                    document.write("개발 세션은 <strong>202호</strong>에서 진행됩니다.");
+                    break;
+                case '3': 
+                    document.write("디자인 세션은 <strong>203호</strong>에서 진행됩니다.");
+                    break;
+                default:
+                    document.write("잘못입력하셨습니다.")
+            }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>표만들기</title>
+    <style>
+        table{
+            border-width: 1px;  /*테두리의 너비*/
+            border-style: solid; /*테두리의 스타일*/
+            border-color: blue; /*테두리의 색상*/
+            width: 300px; height: 30px;
+            text-align: center;
+            border-collapse: collapse; /*실선으로 만듬*/
+            }
+        td{ 
+            /* border : 너비 스타일 색상 3가지 한번에 쓸때*/
+            border: 1px solid rgb(0, 195, 255) ;
+            width: 300px; height: 30px;    
+        }
+
+    </style>
+</head>
+<body>
+    <h2>로그인 폼</h2>
+    <table>
+        <tr>
+            <td>아이디</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td></td>
+        </tr>
+        <!-- 병합하는법은 colspan 열(colum) -->
+        <tr>
+            <td colspan="2">로그인</td>
+          
+
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+
+
+
+</html>

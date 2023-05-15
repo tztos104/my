@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+
+#wrap{
+width:90%;
+/* 960px */
+height:500px;
+margin:0 auto;
+border:4px solid #000;
+}
+
+#wrap div{width:35%;
+	display: inline-block;
+}
+
+#wrap div:first-child{
+	
+/* 960px */
+
+
+padding: 50px 10%;
+background: red;
+
+}
+
+#wrap div:first-child + div{
+padding:130px 5%;
+/* 130px ÷ 960px */
+background:#f7e041;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div></div><div></div>
+	</div>
+</body>
+</html>

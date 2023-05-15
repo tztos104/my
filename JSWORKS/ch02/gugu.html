@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+
+    <script>
+        let dan= parseInt(prompt("몇단?"))
+       let result = ""
+
+       
+        for(var i=1; i<=dan; i++) 
+        {
+            // document.write(dan+"x"+ i + "="+ (dan*i)+"<br>")
+           let current_value = dan+"x"+ i + "="+ (dan*i)+"<br>"
+            result += current_value //누적값 = 누적밧 +현재값
+    }
+    document.write(result)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: #F8F8F8;
+    font-family: sans-serif;
+}
+
+#game {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+#result {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#try-count {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#input-form {
+    margin-bottom: 20px;
+}
+
+#input-form input {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    font-size: 24px;
+    background-color: #1E90FF;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #007FFF;
+}

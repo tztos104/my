@@ -1,0 +1,20 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center
+}
+ul li{list-style: none;
+    margin: 10px;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+fieldset{margin-bottom: 20px;}
+.button input{
+    margin: 5px 2px;
+    cursor: pointer;
+    text-align: justify;
+}
+

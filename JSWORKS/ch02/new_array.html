@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열-array 객체를 이용한 배열</title>
+    <script>
+        let num =new Array();
+       
+
+        // let num = new Array(1,2,3,4,5);
+        num[0]=1;
+        num[1]=2;
+        num[2]=3;
+        num[3]=4;
+        
+      
+       
+        // 자료 수정
+        num[3]= 5;
+
+        delete num[2];
+        num[2] = 6;
+
+        console.log(num);
+
+        console.log("개수:"+num.length);
+        for(var i=0 ; i<num.length;i++){
+            document.write(num[i]+"     ")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

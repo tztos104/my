@@ -1,0 +1,12 @@
+#wrap{
+    width: 640px; margin: 0 auto;
+}
+#check{ border: 1px solid #eee;}
+h1{font-size: 1em; background-color: #000; color: #fff;
+padding: 10px; margin: 0px; letter-spacing: 3px;
+}
+h2{color: red;
+    font-size: 1,5em; text-align: center; }
+p{text-align: center; line-height: 2;}
+.accent{color: blue;}
+.smalltext{font-size:0.7em;}

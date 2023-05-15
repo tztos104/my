@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='js/main-js.js')}}"></script>
+</head>
+<body>
+    <div id="container">
+   {% include 'header.html'%}
+        <div id="main-pic">
+            <img src="{{url_for('static', filename='images/header1.jpg')}}" id="pic">
+        </div>
+    <section id="main">
+        <h2> 안녕하세요!</h2>
+        <div class="img1">
+        <img  src="./static/images/prod1.jpg" alt="">
+            <p id="demo"></p>
+        </div>
+    </section>
+       {% include 'footer.html'%}
+
+    </div>
+
+</body>
+</html>

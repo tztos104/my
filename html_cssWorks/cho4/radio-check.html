@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼</title>
+    <style>
+label:hover{color: red;}
+        form{ 
+            width: 600px;
+        }
+        fieldset{
+            margin-bottom: 20px;
+            
+        }
+        legend{font: 15px ;
+        font-weight: bold;
+    color: green;}
+    label{margin: 20px;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+            <!-- label의 역할 글자를 눌러도 버튼이 선택됨 name 값 동일해야함. -->
+            <label><input type="radio" name="subject" value="speaking">수학</input></label>
+            <label><input type="radio" name="subject" value="speaking">과학</input></label>
+            <label><input type="radio" name="subject" value="speaking">영어</input></label>
+            <label><input type="radio" name="subject" value="speaking">사회</input></label>
+            <label><input type="radio" name="subject" value="speaking">물리</input></label>
+            </fieldset>
+
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수가능)</p>
+            <label><input type="checkbox" name="mailling" value="speaking">수학</input></label>
+            <label><input type="checkbox" name="mailling" value="speaking">수학</input></label>
+            <label><input type="checkbox" name="mailling" value="speaking">수학</input></label>
+            <label><input type="checkbox" name="mailling" value="speaking">수학</input></label>
+            <label><input type="checkbox" name="mailling" value="speaking">수학</input></label>
+   
+
+        </fieldset>
+
+
+
+    </form>
+
+
+</body>
+</html>

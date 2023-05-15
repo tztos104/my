@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕하세요</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='js/main-js.js')}}"></script>
+</head>
+<body>
+    <div id="container">
+         {% if not session %}
+        <script>
+            alert("로그인을 해주세요")
+            location.href = "http://127.0.0.1:5000/login"
+        </script>
+        {% endif %}
+
+   {% include 'header.html'%}
+        <div id="main-pic">
+            <img src="{{url_for('static', filename='images/header1.jpg')}}" id="pic">
+        </div>
+    <section id="writing">
+        <h2> 게시판글쓰기</h2>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><input type="text" name="title"
+                    placeholder="글제목" required></td>
+                </tr>
+                <tr>
+                    <td><textarea name="content" placeholder="글내용" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="등록">
+                        <input type="reset" value="취소">
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </form>
+
+
+
+
+
+    </section>
+       {% include 'footer.html'%}
+
+    </div>
+
+</body>
+</html>

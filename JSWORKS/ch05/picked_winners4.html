@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.random() 객체사용</title>
+    <style>
+        section{
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+           
+        }
+        h1{
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            background-color: #eee;
+            }
+        p{text-align: center;}
+    </style>
+</head>
+<body>
+    <section>
+        <h1>당첨자 발표</h1>
+        <button onclick='win()' type="button" id="pick">당첨자는?</button>
+        <p id="show"></p>
+      </section>
+      
+      <script>
+        function win() {
+          let member = parseInt(prompt("전체 응모자 수 : "));
+          let num = parseInt(prompt("당첨자 수 : "));
+          let show = document.getElementById("show");
+      
+          if (member == null || num == null || isNaN(member) || isNaN(num)) {
+            show.innerHTML = "<p>입력이 취소되었습니다.</p>";
+          } else {
+            let winner = new Array(num);
+            let result = "<p>전체 응모자 수 : " + member + "명<br></p>";
+            result += "<p>당첨자 : ";
+            
+            for (let i = 0; i < winner.length; i++) {
+              let pickedOne = Math.floor(Math.random() * member + 1);
+              winner[i] = pickedOne;
+              for (let j = 0; j < i; j++) {
+                if (winner[j] == winner[i]) {
+                  i--;
+                }
+              }
+            }
+            
+            for (let i = 0; i < winner.length; i++) {
+              if (i == winner.length - 1) {
+                result += winner[i] + "번 ";
+              } else {
+                result += winner[i] + "번, ";
+              }
+            }
+            
+            result += "</p>";
+            show.innerHTML = result;
+          }
+        }
+      </script>
+
+</body>
+</html>

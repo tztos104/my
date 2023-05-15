@@ -1,0 +1,191 @@
+숫자형
+int num=10 ->자바
+var num=10 -> 자바스크립트
+
+변수 선언 방법
+var 변수이름 ='값'
+var userid='sky123'
+var number= 10
+
+문자형
+char ch= 'a' ->자바스크립트
+striong pwd= 123456
+
+
+t =true
+
+&& 연산잔- 논리곱, 교집합
+T && T -> T 
+T && F -> F
+F && T -> F
+F && F -> F
+
+|| 연산자- 논리합, 합집합
+두조건중 한개만 참이어도 참
+
+T || T -> T 
+T || F -> T
+F || T -> T
+F || F -> F 
+
+!연산자 -논리 부정
+! T -> F
+! F
+
+산술연산(증감연산)
+비교연산(논리연산)-조건연산(삼항연산)
+(조건식)? true : false
+
+parselnt(숫자, 문자) ->정수로 변환
+parseFloat(숫자, 문자)-> 실수로 변환
+
+입력 prompt()
+커맨드팡 
+
+제어 control 조건문, 반복문
+
+다중 조건문
+if(조건){//조건=true 실행문}
+else if(조건2){실행문}
+else{//조건1,조건2가 모두 false 실행문}
+
+반복문
+while(조건식){실행문}
+
+무한반복문
+while(true){
+    if 문 
+    break;
+ }
+
+조건 반복문
+key
+
+object- 가장 큰 자료형 (바이트가 크다)
+숫자,문자열,부울형, null, array(배열)
+
+반복문
+
+조건문
+(switch~case)
+switch(변수){
+case 값 1
+break
+case 값2
+break
+default
+break
+}
+
+객체.함수()
+document.getElementByld("id이름") #넣지않음
+
+함수(function, method)
+기능-입력, 출력, 사칙연산
+
+function 함수이름(){}
+
+-브라우저 실행시 함수 호출
+-버튼(태그)를 클릭하면 호출
+
+배열(array)
+-여러 개의 연속적인 값을 저장하는 자료형
+
+요소추가
+numbers.push(10) 맨뒤
+numbers.pop() 맨뒤
+요소삭제
+numbers.unshift() 맨앞
+numbers.shift() 맨앞
+
+특정한 위치 추가 삭제
+splice(index, 삭제개수)
+
+
+배열 객체 함수
+
+특정한 문자열의 첫번째 위치를 반환
+
+
+하나의 키가 2가지 기능=Toggle (토글)
+
+burron onclick = showHide()
+function showHide()
+    let sw = 0
+if(조건식){
+    숨기기
+    sw=1
+}else{
+    보이기
+    sw =false
+}
+
+배열의 복사
+let odd
+//let arr = [] 빈배열
+let arr = new Array(5)
+arr = add
+
+Math 객체
+예 Math.round(2.54, 1)
+Date 객체
+const today = new Date()
+
+사용자 함수
+funtion 함수이름(){}
+funtion showHide
+사용자 객체
+function showHide 
+
+객체 1개 json(xml-> json)
+let book = {
+    "title": '반응형 웹'
+}
+
+Toggle 기능
+let state =true //상태변수
+if(state){
+    실행
+    state= false
+}else{
+    실행2 
+    state=true
+}
+
+객체
+객체 1개
+let person = {name: "김하늘", phone:"010-1234-5678"}
+let person = ["김", "이", "박"]
+
+객체 여러개-클래스(생성자 함수)
+function person(name, phon)
+this.name =name
+this.phon = phone
+
+let person = new Person("안재훈", "010~")
+
+선택자 id="sky"                   선택자 class="sky"
+getElementById("sky")             getElementById("sky")
+querySelector("#sky")             querySelector(".sky")
+querySelectorAll("#sky")          querySelectorAll(".sky")
+
+addEventListener() 
+
+appendChild
+createTextNode
+
+window.onload()-브라우저 실행될대 기능(환경)
+
+BOM-Browser of model (window 객체)
+DOM-Document of model (document 객체)
+
+폼에서 자바스크립트로 처리
+checkBox.checked=true
+주문정보와 배송정보가 같은때 자동입력
+
+정규 표현식
+new RegExp()
+
+id-> let id= document.getElementById("~")
+
+name ->let id= document.regForm.~~

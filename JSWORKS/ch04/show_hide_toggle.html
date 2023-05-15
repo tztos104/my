@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀토글만들기</title>
+    <style>
+        button{margin :10px ; display: block;}
+        img{width: 300px; display: none;}
+    </style>
+</head>
+<body>
+    <button onclick="showHide()" id="btnText">보이기</button>
+   
+    <img src="../cho3/images/flower.jpg" alt="꽃" id="pic" class= "pic">
+
+    <script>
+        
+        let state = true;
+        function showHide(){
+        let img = document.getElementById("pic");
+        
+        let btnText = document.getElementById("btnText");
+        
+
+        if(state){
+            img.style.display= "block";
+            btnText.innerText =" 숨기기";
+            state =false;
+        }else{
+            img.style.display = "none";
+            btnText.innerText =" 보이기";
+            state = true;
+        }}
+
+
+        // function showHide(){
+        //     let sw = 0 ;
+        //     let img = document.getElementById("pic")
+        //     let btnText = document.getElementById("btnText")
+        //     if(img.style.display == "block"){
+        //         img.style.display = "none";
+        //         btnText.innerHTML = "보이기"
+        //        // sw = 0;
+        //     }else{
+        //         img.style.display ="block";
+        //         btnText.innerHTML = "숨기기"
+        //         //sw = 1;
+        //     }
+           
+            
+        // }
+
+
+    </script>
+
+
+</body>
+</html>

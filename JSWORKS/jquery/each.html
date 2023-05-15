@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+       $(document).ready(function(){
+            $('button').click(function(){
+                // $("li").each(function(ids, element){
+                //     // console.log(element)
+                //     let text = $(this).text();
+                //     alert(text)
+                //     console.log(idx, element)
+
+                // })
+                // $("li").text(function(element){
+                //     console.log(element)
+                // })
+                    $("li").text(function(element, index){
+                        console.log(element, index)
+                    })
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+ <button type="button">알림창 실행</button>
+ <ul>
+    <li>coffee</li>
+    <li>milk</li>
+    <li>tea</li>
+
+ </ul>
+    
+</body>
+</html>

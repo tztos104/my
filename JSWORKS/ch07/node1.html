@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom에서 노드 추가하기</title>
+</head>
+<body>
+        <ul id="myList">
+            <li>coffee</li>
+            <li>Tea</li>
+
+        </ul>
+<button onclick="myFunction(); this.onclick='' " >실행</button>
+
+<script>
+    
+    function myFunction(){
+        let newLi = document.createElement("li");
+        let textNode = document.createTextNode("water");
+        newLi.appendChild(textNode) //li water를 연결 추가
+        // <li>water</li>
+
+        //ul안에 포함시키기
+       let list= document.getElementById("myList");
+        list.appendChild(newLi)
+    }
+
+</script>
+
+</body>
+</html>

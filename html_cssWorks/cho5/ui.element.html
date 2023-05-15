@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        form{width: 500px;}
+        input:disabled{
+            border: 1px solid #ccc;
+            background-color: #ddd;
+        }
+        input:checked + span{color: blue;}
+    </style>
+</head>
+<body>
+    <form action="major.jsp" method="post">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <legend>이름 <input type="text" value="홍길동" disabled></legend>
+
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이달에 신청할 과목을 선택하세요</p>
+            <label>
+                <input type="radio" name="subject" id="speaking"><span>회화</span>
+            </label>
+            <label>
+                <input type="radio" name="subject" id="grammer"><span>문법</span>
+            </label>
+            <label>
+                <input type="radio" name="subject" id="writing"><span>작문</span>
+            </label>
+        </fieldset>
+        <input type="submit" value="신청하기">
+
+
+    </form>
+    
+</body>
+</html>

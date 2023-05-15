@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole 파일이름 그림이 없을때
