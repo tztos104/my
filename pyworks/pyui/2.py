@@ -5,6 +5,7 @@ from tkinter import *
 a = []
 remaining_numbers = list(range(1, 46))
 remaining_numbers2 = list(range(1, 46))
+p2 = []
 
 
 def click():
