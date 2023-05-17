@@ -5,6 +5,7 @@ n = len(score)
 print(n)
 
 for i in range(0, n):
+    count = 1
     for j in range(0, n):
         if score[i]< score[j]:
             rank[i]= rank[i] + 1 #순위가 1증가(순위가 밀림)
