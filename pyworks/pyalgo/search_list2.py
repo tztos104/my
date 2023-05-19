@@ -7,8 +7,7 @@ def search_list(a, x):
     n = len(a)
     for i in range(0, n):
        if a[i] == x:
-
-        return name[i]
+           return i
     return -1
 
 v= [60, 5, 33, 12, 97, 24, 5]
