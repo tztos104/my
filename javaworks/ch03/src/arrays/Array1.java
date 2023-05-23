@@ -22,7 +22,6 @@ public class Array1 {
 		int[] arr2 = {2, 4, 6, 8, 10};
 		arr2[4] = 100;
 		
-		
 	}
 
 }

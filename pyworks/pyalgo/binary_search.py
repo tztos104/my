@@ -39,3 +39,4 @@ print(bin_search(d,25))
 print(bin_search(d,36))
 print(bin_search(d,39))
 
+a=[0, 10, 20, 30, 40, 50, 60, 70, 80,90]
