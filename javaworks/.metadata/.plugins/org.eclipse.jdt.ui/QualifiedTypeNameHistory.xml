@@ -32,11 +32,16 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="db.JDCUtil"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="db.JDBCUtil"/>
+    <fullyQualifiedTypeName name="interfaceex.calculator.MyCalculator"/>
+    <fullyQualifiedTypeName name="interfaceex.calculator.Calculator"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.Television"/>
 </qualifiedTypeNameHistroy>

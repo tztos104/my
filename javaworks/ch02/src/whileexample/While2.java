@@ -7,24 +7,22 @@ public class While2 {
 		int i = 0;
 		
 		while(true) {
-			i++;
+			
 			if(i>=10)
-				
-				System.out.println(i);
-			break;}
-		
-		sumVal += i;
+				i++;								
+		int sumVal += i;
 		System.out.println(sumVal);
 		
+		break;}
+		
 	
 	
 	}
 	
 		
-		
-		
+			
 
-	}
+	
 
 }
 
@@ -32,4 +30,4 @@ public class While2 {
 	
 	
 	
-}
+
