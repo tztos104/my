@@ -12,7 +12,7 @@ public class Person {
 		this.money = money;
 	}
 	
-	//버스를 타는 기능을 하는 메서드
+	//를 타는 기능을 하는 메서드
 	void takeBus(Bus bus) {
 		bus.take(1300);
 		this.money -= 1300;

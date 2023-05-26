@@ -9,7 +9,7 @@ public class Student {
 	int studentId;		//학번
 	String studentName;	//이름
 	ArrayList<Subject> subjectList;
-	int 
+	 
 	//생성자
 	public Student(int studentId, String studentName) {
 		this.studentId =studentId;
