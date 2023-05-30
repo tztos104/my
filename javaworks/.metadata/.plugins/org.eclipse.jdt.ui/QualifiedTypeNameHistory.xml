@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="banking.bankarray.Account"/>
     <fullyQualifiedTypeName name="arraylist.ArrayList1"/>
     <fullyQualifiedTypeName name="objectarray.Book"/>
     <fullyQualifiedTypeName name="arraylist.scorelist.Subject"/>
@@ -20,7 +19,6 @@
     <fullyQualifiedTypeName name="inheritance.airplane.SuperSonicAirPlane"/>
     <fullyQualifiedTypeName name="transport.Person"/>
     <fullyQualifiedTypeName name="transport.Vehicle"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="fruits.Fruit"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
@@ -33,8 +31,6 @@
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="db.JDCUtil"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -42,6 +38,14 @@
     <fullyQualifiedTypeName name="db.JDBCUtil"/>
     <fullyQualifiedTypeName name="interfaceex.calculator.MyCalculator"/>
     <fullyQualifiedTypeName name="interfaceex.calculator.Calculator"/>
-    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.Television"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.scheduler.LeastJop"/>
+    <fullyQualifiedTypeName name="interfaceex.scheduler.Scheduler"/>
+    <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="banking.bankarray.Account"/>
+    <fullyQualifiedTypeName name="banking.bankarraylist.Account"/>
 </qualifiedTypeNameHistroy>
