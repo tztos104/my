@@ -4,6 +4,7 @@
 <jsp:setProperty property="userid" name="login"/>    
 <jsp:setProperty property="passwd" name="login"/>    
 <%
+	
   	//로그인 체크 함수 호출(반환값 -true/false)
   	boolean result = login.checkUser();
 	
@@ -13,6 +14,7 @@
 			out.println("아이디나 비밀번호를 확인하세요.");
 		}
     
+	
  %>
  <p>아이디: <%=login.getUserid()%></p>
  <p>비밀번호: <%=login.getPasswd()%></p>

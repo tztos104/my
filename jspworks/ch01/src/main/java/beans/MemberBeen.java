@@ -5,14 +5,13 @@ import java.io.Serializable;
 //인터페이스 Serializable(직렬화 - 현재 객체 자체를 저장)
 public class MemberBeen implements Serializable {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	
+	//필드
 	private int id =2023101;
 	private String name = "장그래";
-	
+	//생성자
 	public  MemberBeen(){}
 
 	public int getId() {

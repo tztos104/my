@@ -2,11 +2,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
    
-<%
+<%	request.setCharacterEncoding("utf-8");
 	//폼에 입력된 데이터 가져오기
 	String uid = request.getParameter("userid");
 	String pwd = request.getParameter("passwd");
-
+	
 	LoginBean login = new LoginBean();
 
 	login.setUserid(uid);
