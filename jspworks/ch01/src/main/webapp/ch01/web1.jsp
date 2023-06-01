@@ -19,7 +19,7 @@
 		document.getElementById("demo").innerHTML = now;
 		
 	}
-	
+		
 </script>
 
 </head>
@@ -31,6 +31,9 @@
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter datetime = DateTimeFormatter.ofPattern("yyyy-MM-dd a hh:mm:ss");
 		String current_time = now.format(datetime);
+		
+		//5초후 새로고침
+		//response.setIntHeader("Refresh", 5);
 		
 	%>
 	<h3> 현재 날짜와 시간은 <%= current_time %></h3>

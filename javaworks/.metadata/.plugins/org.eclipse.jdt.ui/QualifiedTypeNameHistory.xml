@@ -42,11 +42,13 @@
     <fullyQualifiedTypeName name="interfaceex.scheduler.LeastJop"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.Scheduler"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="banking.bankarray.Account"/>
     <fullyQualifiedTypeName name="banking.bankarraylist.Account"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.Searchable"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="objects.Book"/>
+    <fullyQualifiedTypeName name="objects.Member"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
