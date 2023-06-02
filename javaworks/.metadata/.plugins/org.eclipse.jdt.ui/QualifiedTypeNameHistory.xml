@@ -42,7 +42,6 @@
     <fullyQualifiedTypeName name="interfaceex.scheduler.LeastJop"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.Scheduler"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="banking.bankarray.Account"/>
     <fullyQualifiedTypeName name="banking.bankarraylist.Account"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.Searchable"/>
@@ -50,5 +49,9 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="objects.Book"/>
     <fullyQualifiedTypeName name="objects.Member"/>
+    <fullyQualifiedTypeName name="game_level.PlayerLevel"/>
+    <fullyQualifiedTypeName name="game_level.AdvancedLevel"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="banking_db.common.JDBCUtil"/>
 </qualifiedTypeNameHistroy>

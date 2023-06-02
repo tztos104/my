@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import banking.banking_db.JDBCUtil;
+
 // DAO - 데이터베이스 연결 및 연동(입력, 검색, 수정, 삭제)
 public class PersonDAO {
 	// field
