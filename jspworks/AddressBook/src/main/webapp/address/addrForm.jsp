@@ -10,7 +10,7 @@
 <body>
 	<div id= "container">
 	<hr>
-	<form action="addrAdd.jsp" methof="post">
+	<form action="addrAdd.jsp" method="post">
 		<table id="tbl_reg">
 			<tr>
 				<td>이름</td>
