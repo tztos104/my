@@ -20,6 +20,12 @@ public class StringCharAt {
 		default:
 			System.out.println("누구세요?");
 		}
+		//lasetIndexOf()
+		String uri = "/board/boardlist.jsp";
+		int uri_idx1 = uri.indexOf('/'); //앞에서 부터 찾음
+		System.out.println(uri_idx1);
+		int uri_idx2 = uri.lastIndexOf('/');//뒤에서부터 찾음
+		System.out.println(uri_idx2);
 	}
 
 } 
