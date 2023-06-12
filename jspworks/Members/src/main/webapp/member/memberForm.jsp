@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body>
+	<jsp:include page="../header.jsp"/> <!-- 해더 삽입 -->
 	<div id = "container">
 		<section id="register">
 			<h3> 회원 가입</h3>
@@ -55,4 +56,5 @@
 	</div>
 
 </body>
+<jsp:include page="../footer.jsp"/> <!-- 푸더 삽입 -->
 </html>

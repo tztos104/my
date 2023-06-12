@@ -8,7 +8,7 @@ public class WriterTest {
 
 	public static void main(String[] args) throws IOException {
 
-		Writer fw = new FileWriter("data.txt");
+		Writer fw = new FileWriter("data2.txt");
 		
 		fw.write("hello~ \n");
 		fw.write("안녕 \n");

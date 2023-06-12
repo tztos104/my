@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
+	<jsp:include page="header.jsp"/> <!-- 해더 삽입 -->
 	<div id="container">
 	<section id="main">
 	<h3>안녕하세요~ 강남커뮤니티입니다.</h3>
@@ -17,4 +18,5 @@
 	</section>
 	</div>
 </body>
+<jsp:include page="footer.jsp"/> <!-- 푸더 삽입 -->
 </html>
