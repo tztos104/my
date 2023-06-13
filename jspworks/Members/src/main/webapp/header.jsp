@@ -24,7 +24,7 @@
 	<c:otherwise>
 		<ul id="topMenu">
 			<li><a href="/logout.do">[${sessionId}님]로그아웃</a></li>
-			<li><a href="/memberForm.do">회원가입</a></li>
+			<li><a href="/memberView.do?memberId=${sessionId}">나의정보</a></li>
 			<li><a href="/boardList.do">게시판</a></li>
 			<li><a href="/memberList.do">회원목록</a></li>
 		</ul>

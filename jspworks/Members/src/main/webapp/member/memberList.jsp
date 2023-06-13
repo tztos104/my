@@ -10,19 +10,15 @@
 <link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body>
-<c:if test="${empty sessionId}">
-	<script >
-	alert("로그인이 필요합니다.");
-	location.href = "/loginForm.do";
 
-	</script>
-
-</c:if>
 	<jsp:include page="../header.jsp"/> <!-- 해더 삽입 -->
 
 	<div id="container">
-		<section id="memberlist">
+			<section id="memberlist">
 	<h3> 회원목록입니다</h3>
+	<div class="Logout">
+		<p><a href="/logout.do">[관리자 로그아웃]</a></p>
+	</div>
 	<table id="tbl_list">
 		<thead>
 			<tr>
@@ -31,6 +27,7 @@
 				<th>이름</th>
 				<th>성별</th>
 				<th>가입일</th>
+				<th>삭제</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,6 +41,7 @@
 <%-- 				<td><c:out value="${member.joinDate}"/></td> --%>
 				<td><f:formatDate value="${member.joinDate}"
 						pattern="yyyy-MM-dd a hh:mm:ss"/></td>
+				<td><a href="/deleteMember.do?memberId=${member.memberId}" onclick="return confirm('정말로 삭제하시겠습니까?')"><button type="button">삭제</button></a></td>
 				
 			</tr>
 			</c:forEach>

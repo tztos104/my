@@ -16,7 +16,7 @@ CREATE TABLE t_board(
     hit NUMBER DEFAULT 0,
     memberid VARCHAR2(20) NOT NULL,
     CONSTRAINT FK_MemberBoard FOREIGN KEY(memberid)
-    REFERENCES t_member(memberid)
+    REFERENCES t_member(memberid) ON DELETE CASCADE
 
 
 );
@@ -24,9 +24,9 @@ CREATE TABLE t_board(
 --자동 순번(SEQUENCE)
 CREATE SEQUENCE b_seq;
 
-DROP TABLE t_board;
 
 
+delete from t_board where bnum= 2;
 insert into t_member(memberid, passwd, name, gender) VALUES 
     ('tztos', 'm12345', '이영준', '남');
     
@@ -34,4 +34,7 @@ SELECT * FROM t_member;
 SELECT * FROM t_board;
 insert into t_board(bnum, title, content, memberid) 
 VALUES (b_seq.NEXTVAL, '가입인사', '안녕하세요', '123');
+
+DROP TABLE t_board;
+drop SEQUENCE b_seq;
 

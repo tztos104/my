@@ -11,7 +11,7 @@
 <body>
 	<jsp:include page="../header.jsp"/> <!-- 해더 삽입 -->
 	<div id = "container">
-		<section id="register">
+		<section id="detail">
 			<h3> 회원 정보</h3>
 			<table>
 				<tbody>
@@ -44,7 +44,7 @@
 						<td><input type="text" name="joindata" value="${member.joinDate }" readonly="readonly"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><a href="/memberList.do"></a><button type="button">목록</button></td>
+						<td colspan="2"><a href="/memberList.do"><button type="button">목록</button></a></td>
 						
 					</tr>
 				</tbody>

@@ -10,6 +10,34 @@
 		<servlet-name>calc</servlet-name>
 		<url-pattern>/mvc/mvc02</url-pattern>
 	</servlet-mapping>
-  
+	
+	<!-- 보안 권한 설정-->
+	<security-role>
+		<role-name>admin</role-name>
+	</security-role>
+ 	<security-constraint>
+ 		<web-resource-collection>
+ 			<web-resource-name>ch01</web-resource-name>
+ 			<url-pattern>/ch06/security.jsp</url-pattern>
+ 		</web-resource-collection>
+ 		<auth-constraint>
+ 			<description>권한사용자명</description>
+ 			<role-name>123</role-name>
+ 		</auth-constraint>
+ 	</security-constraint>
+   <!-- 기본인증(제공) 
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>-->
+	
+	<!--사용자폼기반 인증  -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/ch06/login.jsp</form-login-page>
+			<form-error-page>/ch06/login_failed.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+
 
 </web-app>
