@@ -49,7 +49,8 @@
 	
 	</table>
 	
-	
+	<h4> 이벤트 추첨 링크</h4>
+	<a href="/memberEvent.do"><img class="event" alt="" src="../resources/images/event.jpg" width="400px" ></a>
 		
 	
 		</section>

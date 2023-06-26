@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{%block title %} 포스트 목록입니다.
+{%endblock%}
+{% block content%}
+<div class="container">
+
+    {% if post_list %}
+<!-- 포스트 리스트가 있다면-->
+    {% for post in post_list %}
+    <h3><a href="{% url 'blog:detail' post.id %}"> {{post.title}}</a></h3>
+    <h4 style="white-space: pre-line; line-height: 1.5em">{{post.content}}</h4>
+    <h5>(작성일:{{post.pub_date}})</h5>
+    {% if post.photo %}
+                <img src="{{ post.photo.url }}">
+            {% endif %}
+    {%endfor%}
+    {% else %}
+<!-- 포스트 리스트가 없다면-->
+    <p> 포스트가 없습니다.</p>
+    {%endif%}
+    <aside>
+        <h4>분류     </h4>
+        <ul>
+        {%for category in categories%}
+            {% if current_category.slug == category.slug %}
+
+            <a href="{{category.get_absoulute_url}}">   <li style="background: #ff0">{{category.name}}({{category.post_set.count}})</li></a>
+            {%else%}
+              <a href="{{category.get_absoulute_url}}">   <li>{{category.name}}({{category.post_set.count}})</li></a>
+            {%endif%}
+
+          {%endfor%}
+            </ul>
+    </aside>
+
+
+</div>
+{% endblock%}

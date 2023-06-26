@@ -41,7 +41,7 @@ SELECT * FROM employee
 WHERE empname LIKE '이%';
 
 --사원 총 인원수를 구하시오
-SELECT COUNT(*) as 사원수
+SELECT COUNT(*) as  사원수
 FROM employee;
 
 --중복없이 부서번호를 검색하시오(DISTINCT 키워드)

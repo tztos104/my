@@ -1,8 +1,10 @@
 package controller;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Currency;
+import java.util.Enumeration;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -12,6 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 import board.Board;
 import board.BoardDAO;
@@ -124,29 +129,64 @@ public class MainController extends HttpServlet {
 		
 			//게시판 관리
 		if(command.equals("/boardList.do")) {
-			ArrayList<Board> boardList = boardDAO.getBoardList();
+			
+			
+			//페이지 처리
+			String pageNum = request.getParameter("pageNum");
+			if(pageNum == null) { //기본 1페이지
+				pageNum = "1";
+			}
+			//각 페이지의 첫행 : 1page -> 1 2page->11 3->21
+			int currentPage = Integer.parseInt(pageNum);
+			int pageSize = 10;
+			int startRaw = (currentPage-1)*10 + 1;
+			
+			//시작 페이지
+			int startpage = startRaw /pageSize + 1;
+			
+			//종료 페이지
+			int total= boardDAO.getBoardCount(); //총행수가 나누어 떨어지지 않으면페이지 수 에 1을 더함
+			int endPage=total/pageSize;
+			endPage = (endPage%pageSize == 0)? endPage : endPage+1;
+			//게시글 목록 함수
+			ArrayList<Board> boardList=boardDAO.getBoardList(currentPage);
+				
 			
 			//모델 생성
 			request.setAttribute("boardList", boardList);
+			request.setAttribute("currentPage", currentPage);
 			nextPage = "/board/boardList.jsp";
 		}else if(command.equals("/boardForm.do")) {
 			nextPage = "board/boardForm.jsp";
 		}else if(command.equals("/addBoard.do")) {
-			//글씨기 폼에 입력된 데이터 받아오기
-			String title = request.getParameter("title");
-			String content = request.getParameter("content");
-			//memberId 세션을 가져오기
-			String memberId =(String)session.getAttribute("sessionId");
 			
-			Board board = new Board();
-			board.setTitle(title);
-			board.setContent(content);
-			board.setMemberId(memberId);
+			String realFolder = "C:/my!/jspworks/Members/src/main/webapp/upload";
+			MultipartRequest multi = new MultipartRequest(request, realFolder, 5*1024*1024, "utf-8", new DefaultFileRenamePolicy());
+			//글씨기 폼에 입력된 데이터 받아오기
+			String title = multi.getParameter("title");
+			String content = multi.getParameter("content");
+			//memberId 세션을 가져오기
+			String memberId = (String)session.getAttribute("sessionId");
+			
+			//fileName 속성 가져오기
+			Enumeration<String> files = multi.getFileNames();
+			String name = "";
+			String fileName = "";
+			if(files.hasMoreElements()) {
+				name = (String)files.nextElement();
+				fileName = multi.getFilesystemName(name); //서버에 저장될 파일 이름
+			}
+			
+			Board newboard = new Board();
+			newboard.setTitle(title);
+			newboard.setContent(content);
+			newboard.setMemberId(memberId);
+			newboard.setFileUpload(fileName);
 			
 			//글쓰기 처리 메서드 호출
-			boardDAO.addBoard(board);
-			nextPage = "/boardList.do";
+			boardDAO.addBoard(newboard);
 			
+			nextPage = "board/boardList.jsp";
 			
 		}else if(command.equals("/boardView.do")) {
 			int bnum=Integer.parseInt(request.getParameter("bnum"));
@@ -158,6 +198,29 @@ public class MainController extends HttpServlet {
 			int bnum=Integer.parseInt(request.getParameter("bnum"));
 			boardDAO.deleteBoard(bnum);
 			nextPage = "/boardList.do";
+		}else if(command.equals("/updateBoard.do")) {
+			int bnum = Integer.parseInt( request.getParameter("bnum"));
+			Board board = boardDAO.getBoard(bnum);
+			
+			request.setAttribute("board", board);
+			
+			nextPage = "/board/updateBoard.jsp";
+		}else if(command.equals("/updateProcess.do")) {
+			//수정 폼에서 입력 내용 받기
+			
+			int bnum = Integer.parseInt( request.getParameter("bnum"));
+			String title = request.getParameter("title");
+			String content = request.getParameter("content");
+			
+			Board updateboard = new Board();
+			updateboard.setTitle(title);
+			updateboard.setContent(content);
+			updateboard.setBnum(bnum);
+			
+			boardDAO.updateBoard(updateboard);
+			nextPage = "/boardView.do";
+		}else if(command.equals("/memberEvent.do")) {
+			nextPage = "/member/memberEvent.jsp";
 		}
 			
 		

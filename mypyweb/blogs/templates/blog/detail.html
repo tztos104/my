@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block content%}
+<div class="container">
+    <h1> blog 홈</h1>
+
+
+    <h3>{{post.title}}</h3>
+    <h4 style="white-space: pre-line; line-height: 1.5em">{{post.content}}</h4>
+    <h5>(작성일:{{post.pub_date}})</h5>
+
+
+
+
+</div>
+{% endblock%}

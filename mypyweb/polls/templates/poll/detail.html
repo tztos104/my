@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <title>설문 항목</title>
 </head>
 <body>
-$END$
+    <h1> 설문 항목</h1>
+
+    <div id="container">
+        <section id="detail">
+    <form action="{% url 'poll:vote' question.id%}" method="post">
+    {% csrf_token %} <!--해킹 방지-->
+
+        <fieldset>
+            {% if error %}
+                <p class="error"> {{error}}</p>
+            {%endif%}
+            <legend>{{question.question_text}}</legend>
+            {% for choice in question.choice_set.all %}
+            <p>
+                <input type="radio" name="choice" value="{{choice.id}}">
+                <label>{{choice.choice_text }}</label>
+
+            </p>
+             {% endfor %}
+        </fieldset>
+     <input type="submit" value="투표">
+
+
+    </form>
+            </section>
+        </div>
+
+
+
 </body>
 </html>

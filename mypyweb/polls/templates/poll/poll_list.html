@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>main 페이지</title>
+    <link rel="stylesheet" href="{% static 'poll/css/style.css'%}">
+</head>
+<body>
+<div id="container">
+    <section id="poll_list">
+    <h1>설문 목록</h1>
+
+    <!--<h3> {{question_list}}</h3>-->
+    {% if question_list %}
+    <ul>
+        {% for question in question_list %}
+        <li>
+            <a href="{% url 'poll:detail' question.id%}">
+            {{question.question_text}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p> 설문이 없습니다.</p>
+    {% endif%}
+    <img src="{% static 'poll/images/vote.JPG'%}">
+</section>
+</div>
+</body>
+</html>

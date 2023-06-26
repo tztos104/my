@@ -1,0 +1,28 @@
+@charset 'utf-8'
+
+#container{width: 80%; margin: 50px auto;}
+h1{color: #57a0db; border-bottom: 2px solid #ccc;
+      padding-bottom : 15px}
+a{text-decoration:none;}
+
+
+/* 메인 스타일*/
+#main{width: 80%; margin: 100px auto;}
+#main img{width: 200px; height:200px}
+#main .poll{float: left; margin-left : 250px}
+#main .ocr{float: right; margin-right : 250px}
+#main p{text-align: center;}
+
+
+
+
+/*poll_list 스타일*/
+
+#poll_list{width: 80%; margin: 0 auto;}
+#poll_list img{width: 400px; height: 200px; margin: 50px 0 0 50px}
+#poll_list ul li {margin: 30px 0; list-style: circle ; }
+#poll_list ul li a{text-decoration:none;}
+
+
+/* detail 스타일 */
+#detail .error{color: red;}

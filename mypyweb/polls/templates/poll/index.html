@@ -9,7 +9,18 @@
 <body>
     <div id="container">
         <section id="main">
-            <h1>메인페이지 입니다.</h1>
+            <div class="poll">
+                <a href="{%url 'poll:poll_list' %}">
+                    <img src="{% static 'poll/images/vote.JPG' %}" alt="투표">
+                    <p>설문 투표 바로가기</p>
+                </a>
+            </div>
+            <div class="ocr">
+                <a href="">
+                    <img src="{% static 'poll/images/ocr.png' %}" alt="투표">
+                    <p>설문 투표 바로가기</p>
+                </a>
+            </div>
 
 
         </section>

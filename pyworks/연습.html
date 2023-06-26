@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      width: 100%;
+      height: 100vh;
+      overflow: scroll;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .image {
+      max-width: 50%;
+      max-height: 500%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showImage()">사진 보기</button>
+
+  <div id="imageContainer" class="container" style="display: none;">
+    <img id="fullscreenImage" class="image" src="" alt="Full Screen Image">
+    <span class="close-button" onclick="hideImage()">닫기</span>
+  </div>
+
+  <script>
+    function showImage() {
+      var container = document.getElementById("imageContainer");
+      container.style.display = "block";
+
+      var image = document.getElementById("fullscreenImage");
+      image.src = "./b.jpg";
+    }
+
+    function hideImage() {
+      var container = document.getElementById("imageContainer");
+      container.style.display = "none";
+    }
+  </script>
+</body>
+</html>

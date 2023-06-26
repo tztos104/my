@@ -1,5 +1,6 @@
 package member;
 
+import java.io.Console;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -136,5 +137,37 @@ public class MemberDAO {
 			JDBCUtil.close(conn, pstmt);
 		}
 	}
-
+	
+	//ID 중복 체크
+	/*
+	 * public int duplicatedID(String memberId) { int result = 0; conn =
+	 * JDBCUtil.getConnection(); String sql =
+	 * "SELECT COUNT(*) AS result FROM t_member WHERE memberid = ?"; try { pstmt =
+	 * conn.prepareStatement(sql); pstmt.setString(1, memberId); rs =
+	 * pstmt.executeQuery(); if(rs.next()) { result = rs.getInt("result"); } } catch
+	 * (SQLException e) { e.printStackTrace(); } finally { JDBCUtil.close(conn,
+	 * pstmt, rs); } return result; }
+	 */
+	
+	//ID 중복 체크
+	public int duplicatedID(String memberId) {
+		int result = 0;
+		conn = JDBCUtil.getConnection();
+		String sql = "SELECT COUNT(*) AS result FROM t_member WHERE memberid = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberId);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				result = rs.getInt("result");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JDBCUtil.close(conn, pstmt, rs);
+		}
+		return result;
+	}
+	
+	
 }

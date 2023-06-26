@@ -36,9 +36,16 @@
 					</tr>
 					<tr>					
 						<td>
+							
 							<c:out value="글쓴이:  ${board.memberId}" /> 
+							<c:if test="${empty board.modifyDate }">
 							 (작성일: <f:formatDate value="${board.regDate}" 
 	            				   	  				pattern="yyyy-MM-dd hh:mm:ss"/>)
+	            			</c:if >
+	            			<c:if test="${not empty board.modifyDate }">
+	            			 (수정일: <f:formatDate value="${board.modifyDate}" 
+	            				   	  				pattern="yyyy-MM-dd hh:mm:ss"/>)
+	            			</c:if>
 							 
 													</td>
 					</tr>
@@ -46,8 +53,8 @@
 						<td>
 					 		<a href="/boardList.do"><button type="button">목록</button></a>
 					 		<c:if test="${sessionId == board.memberId}">
-					 		
-					 		<button type="button">수정</button>
+					 		<a href="/updateBoard.do?bnum=<c:out value='${board.bnum }'/>">
+					 		<button type="button">수정</button></a>
 					 		<a href="/deleteBoard.do?bnum=${board.bnum}"
 					 		onclick="return confirm('정말로 삭제하시겠습니까?')"><button type="button">삭제</button></a>
 							</c:if>

@@ -21,7 +21,7 @@
 	<div id = "container">
 		<section id="board_reg">
 			<h3>글쓰기</h3>
-			<form action="addBoard.do" method="post">
+			<form action="addBoard.do" method="post" enctype="multipart/form-data">
 			<table>
 				<tbody>
 					<tr>					
@@ -32,6 +32,11 @@
 					<tr>
 						<td>
 							<textarea rows="8" cols="100" name="content" placeholder="글내용"></textarea>
+						</td>
+					</tr>
+					<tr>					
+						<td>
+							<input type="file" name="fileName" > 
 						</td>
 					</tr>
 					<tr>
